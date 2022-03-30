@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
+export PLATFORM="kubernetes"
+cd ../common
+./start -p ../kubernetes-in-docker/0_export_env_vars.sh "$@"
